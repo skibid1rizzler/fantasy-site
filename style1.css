@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;600&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: var(--bg-color, #4a3d8f);
-    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(135deg, #4a3d8f, #6e5ddc);
+    color: #e0e0e0;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .container {
@@ -19,45 +20,34 @@ body {
     box-shadow: 0 0 20px rgba(107, 31, 31, 0.8);
     text-align: center;
     max-width: 600px;
+    transition: transform 0.3s ease;
 }
 
-h1 {
-    font-size: 3em;
-    color: #ffd700;
-    animation: flicker 1.5s infinite alternate;
-    will-change: text-shadow;
-}
-
-p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+.container:hover {
+    transform: scale(1.02);
 }
 
 a {
     text-decoration: none;
-    font-size: 1.3em;
+    color: #ffffff;
+    font-weight: bold;
+    background: #5d4ba0;
     padding: 12px 24px;
+    border: 2px solid #9a7de0;
     border-radius: 12px;
+    transition: background 0.3s, transform 0.3s;
     display: inline-block;
-    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    pointer-events: auto;
 }
 
 a:hover {
-    background-color: #ffd700;
-    color: #000;
+    background: #8a7add;
+    box-shadow: 0 0 15px #9a7de0;
+    transform: scale(1.05);
 }
 
-@keyframes shake {
-    from { transform: translate(0, 0); }
-    to { transform: translate(2px, -2px); }
-}
-
-@keyframes flicker {
-    from { text-shadow: 0 0 5px #ff0000; }
-    to { text-shadow: 0 0 15px #8b0000; }
-}
-
-body.demon {
-    animation: shake 0.5s infinite alternate;
-    will-change: transform;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
