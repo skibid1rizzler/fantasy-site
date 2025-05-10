@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-denim-3.png');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    background-color: rgba(30, 30, 30, 0.85);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #6b1f1f;
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  h1 {
+    color: #ffd700;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #f00, 0 0 10px #700;
+  }
+  
+  p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 15px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #00bfff;
+    font-weight: bold;
+    background-color: #222;
+    padding: 10px 20px;
+    border: 2px solid #00bfff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  a:hover {
+    background-color: #00bfff;
+    color: #000;
+    box-shadow: 0 0 10px #00bfff;
+  }
+  
