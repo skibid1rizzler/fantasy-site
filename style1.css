@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;600&display=swap');
-
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Cinzel', serif;
+    font-family: 'Poppins', sans-serif;
     background: var(--bg-color, #4a3d8f);
     color: #ffffff;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadeIn 1.5s ease-in-out;
+    flex-direction: column;
+    text-align: center;
 }
 
 .container {
@@ -20,38 +19,23 @@ body {
     box-shadow: 0 0 20px rgba(107, 31, 31, 0.8);
     text-align: center;
     max-width: 600px;
-    transition: transform 0.3s ease;
 }
 
 h1 {
-    color: #ffd700;
     font-size: 3em;
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 0 0 10px #ffd700, 0 0 20px #ff8c00;
+    color: #ffd700;
 }
 
 p {
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    background: #5d4ba0;
+    font-size: 1.3em;
     padding: 12px 24px;
-    border: 2px solid #9a7de0;
     border-radius: 12px;
-    transition: background 0.3s, transform 0.3s;
     display: inline-block;
+    transition: 0.3s ease;
 }
-
-a:hover {
-    background: #8a7add;
-    box-shadow: 0 0 15px #9a7de0;
-    transform: scale(1.05);
-}
-
