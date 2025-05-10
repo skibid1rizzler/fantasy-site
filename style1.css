@@ -1,74 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;600&display=swap');
-
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Cinzel', serif;
+    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #4a3d8f, #3a2567); /* Фіолетовий фон */
-    color: #e0e0e0;
-    min-height: 100vh;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    height: 100vh;
     text-align: center;
 }
 
 .container {
-    background-color: rgba(30, 30, 30, 0.85);
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(170, 77, 255, 0.8); /* Фіолетове підсвічування */
-    text-align: center;
-    max-width: 600px;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container:hover {
-    transform: scale(1.02);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #bd75ff; /* Фіолетове підсвічування */
 }
 
 h1 {
     font-size: 40px; /* Збільшений розмір */
-    color: #ffffff;
-    text-shadow: 0 0 15px #bd75ff; /* Підсвічування */
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin: 20px 0;
-}
-
-li:hover {
-    transform: scale(1.05) rotate(-1deg);
-    transition: transform 0.3s ease;
+    text-shadow: 0 0 15px #bd75ff;
 }
 
 a {
+    color: white;
     text-decoration: none;
-    color: #ffffff;
-    font-size: 22px; /* Збільшені букви */
-    font-weight: bold;
-    background: #5d4ba0;
-    padding: 12px 24px;
-    border: 2px solid #bd75ff;
-    border-radius: 12px;
-    transition: background 0.3s, transform 0.3s;
-    display: inline-block;
-    text-shadow: 0 0 10px #bd75ff; /* Підсвічування тексту */
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background: #6e5ddc;
+    border-radius: 5px;
+    font-size: 22px;
+    text-shadow: 0 0 10px #bd75ff;
 }
-
-a:hover {
-    background: #8a7add;
-    box-shadow: 0 0 15px #bd75ff;
-    transform: scale(1.05);
-}
-
