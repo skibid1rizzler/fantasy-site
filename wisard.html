@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>Шлях мага</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>🧙‍♂️ Шлях мага</h1>
-        <p>Ти відчуваєш, як енергія вирує навколо тебе. Яку школу магії ти обираєш?</p>
+        <p>Ти відчуваєш, як енергія наповнює твоє тіло. Яку школу магії ти обираєш?</p>
         <ul>
-            <li><a href="light_magic.html">🌟 Світла магія</a></li>
-            <li><a href="elemental_magic.html">🔥 Елементальна магія</a></li>
+            <li><a href="light_magic.html" onclick="saveChoice('magicType', 'light')">🌟 Світла магія</a></li>
+            <li><a href="elemental_magic.html" onclick="saveChoice('magicType', 'elemental')">🔥 Елементальна магія</a></li>
             <li><a href="index.html">🔙 Відмовитися від магії</a></li>
         </ul>
     </div>
