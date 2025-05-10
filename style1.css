@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;600&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Georgia', serif;
-    background: linear-gradient(#1e1e2f, #2a2a40), url('dark-texture.jpg');
-    background-size: cover;
-    background-blend-mode: overlay;
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(135deg, #4a3d8f, #6e5ddc);
     color: #e0e0e0;
     min-height: 100vh;
     display: flex;
@@ -34,9 +34,10 @@ body {
 
 h1 {
     color: #ffd700;
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 20px;
     text-shadow: 0 0 10px #f00, 0 0 20px #700;
+    font-family: 'Poppins', sans-serif;
     animation: glow 1.5s infinite alternate;
 }
 
@@ -46,8 +47,9 @@ h1 {
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
     animation: fadeText 2s ease-in-out;
 }
 
@@ -62,7 +64,7 @@ ul {
 }
 
 li {
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 li:hover {
@@ -72,21 +74,22 @@ li:hover {
 
 a {
     text-decoration: none;
-    color: #00bfff;
+    color: #ffffff;
     font-weight: bold;
-    background-color: #222;
-    padding: 10px 20px;
-    border: 2px solid #00bfff;
-    border-radius: 8px;
+    background: #5d4ba0;
+    padding: 12px 24px;
+    border: 2px solid #9a7de0;
+    border-radius: 12px;
     transition: background 0.3s, transform 0.3s;
     display: inline-block;
+    font-family: 'Poppins', sans-serif;
 }
 
 a:hover {
-    background-color: #00bfff;
-    color: #000;
-    box-shadow: 0 0 15px #00bfff;
+    background: #8a7add;
+    box-shadow: 0 0 15px #9a7de0;
     transform: scale(1.05);
 }
+
 
   
