@@ -1,6 +1,4 @@
-let playerChoices = JSON.parse(localStorage.getItem('playerChoices')) || {
-    magicType: null
-};
+let playerChoices = JSON.parse(localStorage.getItem('playerChoices')) || {};
 
 function handleChoice(event, key, value) {
     event.preventDefault();
