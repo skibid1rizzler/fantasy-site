@@ -1,31 +1,17 @@
-/* Змінні для кольорів */
-:root {
-    --flicker-color: #ff0000;
-    --flicker-shadow: #8b0000;
-    --shake-speed: 0.5s;
-    --flicker-speed: 1.5s;
-}
-
-/* Анімація тряски */
 @keyframes shake {
-    0% { transform: translate(0, 0); }
-    50% { transform: translate(2px, -2px); }
-    100% { transform: translate(0, 0); }
+    from { transform: translate(0, 0); }
+    to { transform: translate(2px, -2px); }
 }
 
-/* Анімація мерехтіння */
 @keyframes flicker {
-    0% { text-shadow: 0 0 5px var(--flicker-color); }
-    50% { text-shadow: 0 0 10px var(--flicker-shadow); }
-    100% { text-shadow: 0 0 15px var(--flicker-color); }
+    from { text-shadow: 0 0 5px #ff0000; }
+    to { text-shadow: 0 0 15px #8b0000; }
 }
 
-/* Стилі для заголовка */
 h1.demon {
-    animation: flicker var(--flicker-speed) infinite alternate;
+    animation: flicker 1.5s infinite alternate;
 }
 
-/* Стилі для тіла (наприклад, для фону і тряски) */
 body.demon {
-    animation: shake var(--shake-speed) infinite alternate;
-}
+    animation: shake 0.5s infinite alternate;
+} перший
