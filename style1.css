@@ -1,26 +1,10 @@
-/* Основні змінні */
-:root {
-    --bg-color: #4a3d8f;
-    --text-color: #ffffff;
-    --highlight-color: #ffd700;
-    --shadow-color: rgba(107, 31, 31, 0.8);
-    --container-bg: rgba(30, 30, 30, 0.85);
-    --button-hover-bg: #333;
-    --font-family: 'Poppins', sans-serif;
-}
-
-/* Скидання стилів */
-* {
+Ви сказали:
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Основний стиль для body */
-body {
-    font-family: var(--font-family);
-    background: var(--bg-color);
-    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color, #4a3d8f);
+    color: #ffffff;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -29,66 +13,30 @@ body {
     text-align: center;
 }
 
-/* Контейнер */
 .container {
-    background-color: var(--container-bg);
+    background-color: rgba(30, 30, 30, 0.85);
     padding: 30px 40px;
     border-radius: 12px;
-    box-shadow: 0 0 20px var(--shadow-color);
+    box-shadow: 0 0 20px rgba(107, 31, 31, 0.8);
     text-align: center;
     max-width: 600px;
-    width: 100%;
 }
 
-/* Заголовок */
 h1 {
     font-size: 3em;
-    color: var(--highlight-color);
-    margin-bottom: 20px;
+    color: #ffd700;
 }
 
-/* Текст параграфів */
 p {
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-/* Стилі для посилань */
 a {
     text-decoration: none;
     font-size: 1.3em;
     padding: 12px 24px;
     border-radius: 12px;
     display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-/* Стилі для кнопок при наведенні */
-a:hover {
-    background-color: var(--button-hover-bg);
-}
-
-/* Адаптивність для мобільних */
-@media (max-width: 768px) {
-    body {
-        padding: 20px;
-    }
-
-    .container {
-        padding: 20px;
-        max-width: 100%;
-    }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-    p {
-        font-size: 1.3em;
-    }
-
-    a {
-        font-size: 1.2em;
-        padding: 10px 20px;
-    }
+    transition: 0.3s ease;
 }
