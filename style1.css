@@ -10,6 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center; /* Центрує текст */
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -18,13 +19,28 @@ body {
     padding: 30px 40px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(107, 31, 31, 0.8);
-    text-align: center;
+    text-align: center; /* Центрує текст */
     max-width: 600px;
     transition: transform 0.3s ease;
 }
 
 .container:hover {
     transform: scale(1.02);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Центрує список */
+}
+
+li {
+    margin: 20px 0;
+}
+
+li:hover {
+    transform: scale(1.05) rotate(-1deg);
+    transition: transform 0.3s ease;
 }
 
 a {
@@ -38,16 +54,10 @@ a {
     transition: background 0.3s, transform 0.3s;
     display: inline-block;
     font-family: 'Poppins', sans-serif;
-    pointer-events: auto;
 }
 
 a:hover {
     background: #8a7add;
     box-shadow: 0 0 15px #9a7de0;
     transform: scale(1.05);
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
