@@ -1,7 +1,8 @@
-// Об'єкт для збереження виборів гравця
+// Збереження виборів гравця
 let playerChoices = {
     magicType: null,
-    darkPath: false
+    darkPath: false,
+    backgroundColor: localStorage.getItem('backgroundColor') || 'purple'
 };
 
 // Функція для збереження вибору
@@ -10,13 +11,15 @@ function saveChoice(key, value) {
     localStorage.setItem('playerChoices', JSON.stringify(playerChoices));
 }
 
-// Функція для отримання вибору
-function getChoice(key) {
-    const savedChoices = JSON.parse(localStorage.getItem('playerChoices')) || {};
-    return savedChoices[key];
+// Збереження кольору фону
+function changeBackground(color) {
+    document.body.style.background = color;
+    localStorage.setItem('backgroundColor', color);
 }
 
-// Виклик функції при завантаженні сторінки, щоб зберігати прогрес
+// Застосування фону при завантаженні сторінки
 document.addEventListener("DOMContentLoaded", function () {
-    playerChoices = JSON.parse(localStorage.getItem('playerChoices')) || {};
+    playerChoices = JSON.parse(localStorage.getItem('playerChoices')) || playerChoices;
+    document.body.style.background = playerChoices.backgroundColor;
 });
+
