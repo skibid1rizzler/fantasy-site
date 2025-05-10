@@ -24,6 +24,8 @@ body {
 h1 {
     font-size: 3em;
     color: #ffd700;
+    animation: flicker 1.5s infinite alternate;
+    will-change: text-shadow;
 }
 
 p {
@@ -38,4 +40,24 @@ a {
     border-radius: 12px;
     display: inline-block;
     transition: 0.3s ease;
+}
+
+a:hover {
+    background-color: #ffd700;
+    color: #000;
+}
+
+@keyframes shake {
+    from { transform: translate(0, 0); }
+    to { transform: translate(2px, -2px); }
+}
+
+@keyframes flicker {
+    from { text-shadow: 0 0 5px #ff0000; }
+    to { text-shadow: 0 0 15px #8b0000; }
+}
+
+body.demon {
+    animation: shake 0.5s infinite alternate;
+    will-change: transform;
 }
