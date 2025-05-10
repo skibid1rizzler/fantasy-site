@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Темний вибір</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Темний вибір</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🌌 Темний вибір</h1>
-        <p>Ти прокидаєшся у загадковому світі. Перед тобою три шляхи...</p>
-        <ul>
-            <li><a href="castle.html">🏰 Йти до замку</a></li>
-            <li><a href="forest.html">🌲 Піти у гущу лісу</a></li>
-            <li><a href="cave.html">🕳️ Дослідити печеру</a></li>
-        </ul>
-        <br>
-        <a href="settings.html">⚙️ Налаштування</a>
-    </div>
+  <div id="game-container">
+    <h1>Темний вибір</h1>
+    <p>Ти прокидаєшся у загадковому світі. Перед тобою три шляхи...</p>
+    <button onclick="chooseOption('castle')">Йти до замку 🏰</button>
+    <button onclick="chooseOption('forest')">Піти у гущу лісу 🌲</button>
+    <button onclick="chooseOption('cave')">Дослідити печеру 🕳️</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
