@@ -5,10 +5,10 @@ let playerChoices = JSON.parse(localStorage.getItem('playerChoices')) || {
 };
 
 function handleChoice(event, key, value) {
-    event.preventDefault(); // Запобігає негайному переходу
+    event.preventDefault();
     playerChoices[key] = value;
     localStorage.setItem('playerChoices', JSON.stringify(playerChoices));
-    setTimeout(() => window.location.href = event.target.href, 200); // Затримка для збереження
+    setTimeout(() => window.location.href = event.target.href, 200);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
