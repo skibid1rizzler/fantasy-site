@@ -4,18 +4,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Cinzel', serif;
-    background: linear-gradient(135deg, #4a3d8f, #6e5ddc);
-    color: #e0e0e0;
+    background: var(--bg-color, #4a3d8f);
+    color: #ffffff;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: fadeIn 1.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 .container {
@@ -28,48 +23,18 @@ body {
     transition: transform 0.3s ease;
 }
 
-.container:hover {
-    transform: scale(1.02);
-}
-
 h1 {
     color: #ffd700;
     font-size: 3em;
     margin-bottom: 20px;
-    text-shadow: 0 0 10px #f00, 0 0 20px #700;
     font-family: 'Poppins', sans-serif;
-    animation: glow 1.5s infinite alternate;
-}
-
-@keyframes glow {
-    from { text-shadow: 0 0 5px #ffd700; }
-    to { text-shadow: 0 0 20px #ffd700; }
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ff8c00;
 }
 
 p {
     font-size: 1.3em;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
-    animation: fadeText 2s ease-in-out;
-}
-
-@keyframes fadeText {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin: 20px 0;
-}
-
-li:hover {
-    transform: scale(1.05) rotate(-1deg);
-    transition: transform 0.3s ease;
 }
 
 a {
@@ -82,7 +47,6 @@ a {
     border-radius: 12px;
     transition: background 0.3s, transform 0.3s;
     display: inline-block;
-    font-family: 'Poppins', sans-serif;
 }
 
 a:hover {
@@ -91,5 +55,3 @@ a:hover {
     transform: scale(1.05);
 }
 
-
-  
