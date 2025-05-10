@@ -10,8 +10,10 @@
 
 h1.demon {
     animation: flicker 1.5s infinite alternate;
+    will-change: text-shadow;
 }
 
 body.demon {
     animation: shake 0.5s infinite alternate;
+    will-change: transform;
 }
